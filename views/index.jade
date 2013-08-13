@@ -1,14 +1,38 @@
-!= title_with_markup()
+header.header
+  .header-inner
+    h1.header-logo
+      span.text-yellow fli
+      span.text-normal cat
+    include _header-navigation
 
-:markdown
-  **Whoo!** You got everything working. Now get to making cool things : )
+.main
+  .block
+    a(href='#') Google
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
+  .block a
 
-p this file can be found in views/index.jade
+//- p!= JSON.stringify(site.posts)
 
-include _partial
 
-:markdown
-  For help and documentation, check out [http://roots.cx](http://roots.cx)
+.more-block
+  .btn-more
+    | more
 
-:coffeescript
-  console.log 'you can even use coffeescript in your views, aw yeah'
+footer.footer-block
+  include _footer

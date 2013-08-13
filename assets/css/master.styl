@@ -4,4 +4,108 @@ normalize()
 base()
 
 body
-  padding: 50px
+  background #ffffff
+  font-family 'Raleway', sans-serif
+  color #666666 
+
+grid()
+
+  column-width = 60px
+  gutter-width = 10px
+  columns = 12
+  total-width = 980px
+
+.main
+  overflow hidden
+  width 980px
+  margin 80px auto 0  
+  padding 0 50px
+
+.block
+  column(3)
+  background #000000
+  -webkit-border-radius 5px 
+  border-radius 5px 
+  height 100px
+  margin 5px
+
+.header
+  position fixed
+  top 0
+  width 100%
+  margin 0 auto
+  background rgba(255, 255, 255, 1) 
+
+.header-inner
+  width 940px
+  margin 0 auto
+
+.header-logo
+  float left
+  display inline-block
+  font-weight 700
+  letter-spacing 0.12em
+  margin 20px 0
+
+.text-yellow
+  color #E5CB70
+
+.header-navigation
+  margin 25px 0 0
+  padding 0 
+  float right
+  li
+    display inline-block
+    margin-left 20px 
+    font-size 90% 
+    font-weight 800
+    text-transform uppercase
+  a
+    text-decoration none
+    color #666666
+    &:hover
+      color darken(#E5CB70,30%)
+      hover-underline()
+      transition: all .1s ease-in-sine
+
+.header-search
+  font-family 'Raleway', sans-serif
+  padding 3px 
+  -webkit-border-radius 5px
+  border-radius 5px
+  border: solid 2px #CCCCCC
+
+.more-block
+  overflow hidden
+  width 980px
+  margin 10px auto
+  padding 10px 0
+  text-align center
+  background lighten(#E5CB70,20)
+  -webkit-border-radius 5px
+  border-radius 5px
+  font-weight 700
+  color darken(#E5CB70,30%)
+  hover-darken(percent = 15%)
+  transition: all .1s ease-in-sine
+  
+.footer-block
+  width 980px
+  margin 50px auto 20px
+  overflow hidden
+
+.sns-block
+  float left
+  margin 0
+  padding 0  
+  li
+    display inline-block
+
+.copyright
+  float right
+  font-size 11px
+  text-transform uppercase
+
+.footer-logo
+  color darken(#E5CB70,30%)
+  font-weight 700 
